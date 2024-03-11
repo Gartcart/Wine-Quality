@@ -1,1 +1,9 @@
 <Useless Text>
+
+DEPENDENCIES:
+
+Pandas
+Numpy
+Statsmodels
+Scipy
+Scikit-learn
