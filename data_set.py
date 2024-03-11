@@ -4,8 +4,10 @@ from ucimlrepo import fetch_ucirepo
 wine_quality = fetch_ucirepo(id=186)
 
 # data (as pandas dataframes)
-features = wine_quality.data.features
-targets = wine_quality.data.targets
+# X = data features
+X = wine_quality.data.features
+# Y = data targets
+Y = wine_quality.data.targets
 
 # metadata
 print(wine_quality.metadata)
