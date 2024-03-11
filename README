@@ -2,6 +2,7 @@
 
 DEPENDENCIES:
 
+ucmlrepo
 Pandas
 Numpy
 Statsmodels
