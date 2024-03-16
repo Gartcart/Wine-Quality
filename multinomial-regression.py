@@ -1,5 +1,7 @@
 import pandas as pd
 import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
@@ -46,6 +48,15 @@ print(classification_report(y_test, y_pred))
 # Print confusion matrix
 print("Confusion Matrix:")
 print(confusion_matrix(y_test, y_pred))
+
+# Create a confusion matrix heatmap
+conf_matrix = confusion_matrix(y_test, y_pred)
+plt.figure(figsize=(8, 6))
+sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues', xticklabels=logreg_multinomial.classes_, yticklabels=logreg_multinomial.classes_)
+plt.xlabel('Predicted Label')
+plt.ylabel('True Label')
+plt.title('Confusion Matrix Heatmap')
+plt.show()
 
 # After fitting the model, let's grab some coefficients to determine their impact
 feature_names = dataset.columns[:-2]  # Exclude the target variable and quality category
