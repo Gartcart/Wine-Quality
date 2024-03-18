@@ -23,19 +23,23 @@ qda = QuadraticDiscriminantAnalysis()
 qda.fit(X_train, y_train)
 
 # Make predictions on the testing data
-y_pred = qda.predict(X_test)
+y_pred_qda = qda.predict(X_test)
 
 # Compute confusion matrix
-conf_matrix = confusion_matrix(y_test, y_pred)
+conf_matrix_qda = confusion_matrix(y_test, y_pred_qda)
 
 # Print classification report
 print("Classification Report:")
-print(classification_report(y_test, y_pred, zero_division=0))
+print(classification_report(y_test, y_pred_qda, zero_division=0))
 
-# Plot confusion matrix heatmap
+# Generate tick labels from 3 to 10
+tick_labels = [str(i) for i in range(3, 11)]
+
+# Plot confusion matrix heatmap for LDA with quality range from 3 to 10
 plt.figure(figsize=(10, 8))
-sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues')
-plt.title('Confusion Matrix')
+sns.heatmap(conf_matrix_qda, annot=True, fmt='d', cmap='Blues',
+            xticklabels=tick_labels, yticklabels=tick_labels)
+plt.title('Confusion Matrix (LDA)')
 plt.xlabel('Predicted Label')
 plt.ylabel('True Label')
 plt.show()
