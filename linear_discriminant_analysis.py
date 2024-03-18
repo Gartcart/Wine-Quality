@@ -32,9 +32,13 @@ conf_matrix_lda = confusion_matrix(y_test, y_pred_lda)
 print("Classification Report (LDA):")
 print(classification_report(y_test, y_pred_lda, zero_division=0))
 
-# Plot confusion matrix heatmap for LDA
+# Generate tick labels from 3 to 10
+tick_labels = [str(i) for i in range(3, 11)]
+
+# Plot confusion matrix heatmap for LDA with quality range from 3 to 10
 plt.figure(figsize=(10, 8))
-sns.heatmap(conf_matrix_lda, annot=True, fmt='d', cmap='Blues')
+sns.heatmap(conf_matrix_lda, annot=True, fmt='d', cmap='Blues',
+            xticklabels=tick_labels, yticklabels=tick_labels)
 plt.title('Confusion Matrix (LDA)')
 plt.xlabel('Predicted Label')
 plt.ylabel('True Label')
