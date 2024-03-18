@@ -2,8 +2,10 @@
 
 DEPENDENCIES:
 
+ucmlrepo
 Pandas
 Numpy
 Statsmodels
 Scipy
 Scikit-learn
+Seaborn

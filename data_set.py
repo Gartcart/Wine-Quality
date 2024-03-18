@@ -10,7 +10,7 @@ X = wine_quality.data.features
 y = wine_quality.data.targets
 
 # metadata
-print(wine_quality.metadata)
+# print(wine_quality.metadata)
 
 # variable information
-print(wine_quality.variables)
+# print(wine_quality.variables)
