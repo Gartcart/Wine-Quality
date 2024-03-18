@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Black">
+<<<<<<< HEAD
     <option name="sdkName" value="Python 3.12" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12" project-jdk-type="Python SDK" />
+=======
+<<<<<<< HEAD
+    <option name="sdkName" value="Python 3.12" />
+  </component>
+=======
+<<<<<<< HEAD
+    <option name="sdkName" value="Python 3.12" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12" project-jdk-type="Python SDK" />
+=======
+<<<<<<< HEAD
+    <option name="sdkName" value="Python 3.12" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12" project-jdk-type="Python SDK" />
+=======
+    <option name="sdkName" value="Python 3.9 (wine_quality)" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9" project-jdk-type="Python SDK" />
+>>>>>>> e88be59175424538e6dbdf6ac9dda349f5420a4c
+>>>>>>> 4c0786561c8ea86417a3e735b8c16daa61a5b0f0
+>>>>>>> main
+>>>>>>> main
 </project>
